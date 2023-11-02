@@ -78,5 +78,5 @@ crontab -e
 程序将会在`/opt/hostlocSign`文件夹下生成两个新的文件：
 
 1. `scores.log` 记录执行的时间和具体积分
-2. `error.log` 为报错记录（若无报错，则无此文件）
+2. `error.log` 为报错记录
 
