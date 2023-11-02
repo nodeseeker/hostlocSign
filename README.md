@@ -11,7 +11,7 @@
 
 打开程序的发布页 [https://github.com/nodeseeker/hostlocSign/releases](https://github.com/nodeseeker/hostlocSign/releases)，在列表中找到对应CPU架构的程序（如下图），比如x86_64的Linux系统，即为`hostlocSign-linux-amd64.zip`。
 
-
+![hostlocSign](https://raw.githubusercontent.com/nodeseeker/hostlocSign/main/assets/hostlocSign_releases.jpg)
 
 ### 创建文件路径
 
