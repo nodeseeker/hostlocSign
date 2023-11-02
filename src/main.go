@@ -324,7 +324,7 @@ func main() {
 			// fmt.Println("当前积分：", finalScore)
 
 			// write log, date + time + username + initalScore + finalScore
-			log := fmt.Sprintf("%s,%d,%d", time.Now().Format("2006-01-02 15:04:05"), initalScore, finalScore)
+			log := fmt.Sprintf("%s,%s,%d,%d", time.Now().Format("2006-01-02 15:04:05"), username, initalScore, finalScore)
 			err = writeLog(log)
 			if err != nil {
 				fmt.Println("write log error: ", err)
