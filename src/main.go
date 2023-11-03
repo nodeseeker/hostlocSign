@@ -158,10 +158,11 @@ func checkScores(client *http.Client) (int, error) {
 	//get score
 	re := regexp.MustCompile(`积分: (\d+)`)
 	matches := re.FindStringSubmatch(string(body))
+
 	// check if the value is larger than 0
-	// if len(matches) < 2 {
-	// 	return 0, fmt.Errorf("unexpected score: %s", matches[1])
-	// }
+	if len(matches) < 2 {
+		return 0, fmt.Errorf("unexpected score: %s", matches[1])
+	}
 
 	score, err := strconv.Atoi(matches[1])
 	if err != nil {
